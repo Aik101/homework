@@ -1,0 +1,11 @@
+version: "3.5"
+
+
+services:
+  homework:
+    image: homework:latest
+    container_name: homework
+    restart: unless-stopped
+    build: ./
+    ports:
+      - 3000:3000
